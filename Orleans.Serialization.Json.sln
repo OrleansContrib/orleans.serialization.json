@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orleans.Serialization.Newtonsoft.Json", "Orleans.Serialization.Newtonsoft.Json\Orleans.Serialization.Newtonsoft.Json.csproj", "{4D3C6BE5-EDBF-4612-82A2-BC5F03E295D3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orleans.Serialization.RavenDB.Json", "Orleans.Serialization.RavenDB.Json\Orleans.Serialization.RavenDB.Json.csproj", "{AB202269-B27D-4628-8F4D-31F6D540BC93}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{4D3C6BE5-EDBF-4612-82A2-BC5F03E295D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D3C6BE5-EDBF-4612-82A2-BC5F03E295D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D3C6BE5-EDBF-4612-82A2-BC5F03E295D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB202269-B27D-4628-8F4D-31F6D540BC93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB202269-B27D-4628-8F4D-31F6D540BC93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB202269-B27D-4628-8F4D-31F6D540BC93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB202269-B27D-4628-8F4D-31F6D540BC93}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

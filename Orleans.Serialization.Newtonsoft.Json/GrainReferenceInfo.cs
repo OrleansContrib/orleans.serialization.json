@@ -1,4 +1,8 @@
-﻿namespace Orleans.Serialization.Newtonsoft.Json
+﻿#if NEWTONSOFT
+namespace Orleans.Serialization.Newtonsoft.Json
+#elif RAVENDB
+namespace Orleans.Serialization.RavenDB.Json
+#endif
 {
     internal class GrainReferenceInfo
     {

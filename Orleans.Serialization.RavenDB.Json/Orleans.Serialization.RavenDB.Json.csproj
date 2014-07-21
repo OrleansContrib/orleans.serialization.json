@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4D3C6BE5-EDBF-4612-82A2-BC5F03E295D3}</ProjectGuid>
+    <ProjectGuid>{AB202269-B27D-4628-8F4D-31F6D540BC93}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Orleans.Serialization.Newtonsoft.Json</RootNamespace>
-    <AssemblyName>Orleans.Serialization.Newtonsoft.Json</AssemblyName>
+    <RootNamespace>Orleans.Serialization.RavenDB.Json</RootNamespace>
+    <AssemblyName>Orleans.Serialization.RavenDB.Json</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -17,7 +17,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>TRACE;DEBUG;NEWTONSOFT</DefineConstants>
+    <DefineConstants>TRACE;DEBUG;RAVENDB</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
@@ -25,14 +25,16 @@
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE;NEWTONSOFT</DefineConstants>
+    <DefineConstants>TRACE;RAVENDB</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Newtonsoft.Json.6.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Raven.Abstractions">
+      <HintPath>..\packages\RavenDB.Client.2.5.2879\lib\net45\Raven.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Raven.Client.Lightweight">
+      <HintPath>..\packages\RavenDB.Client.2.5.2879\lib\net45\Raven.Client.Lightweight.dll</HintPath>
     </Reference>
     <Reference Include="Orleans">
       <HintPath>$(OrleansSDK)\Binaries\OrleansServer\Orleans.dll</HintPath>
@@ -47,6 +49,7 @@
       <HintPath>$(OrleansSDK)\Binaries\OrleansServer\OrleansRuntime.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -55,10 +58,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GrainReferenceAwareContractResolver.cs" />
-    <Compile Include="GrainReferenceConverter.cs" />
-    <Compile Include="GrainReferenceInfo.cs" />
-    <Compile Include="JsonSerializerSettingsExtensions.cs" />
+    <Compile Include="..\Orleans.Serialization.Newtonsoft.Json\GrainReferenceAwareContractResolver.cs">
+      <Link>GrainReferenceAwareContractResolver.cs</Link>
+    </Compile>
+    <Compile Include="..\Orleans.Serialization.Newtonsoft.Json\GrainReferenceConverter.cs">
+      <Link>GrainReferenceConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\Orleans.Serialization.Newtonsoft.Json\GrainReferenceInfo.cs">
+      <Link>GrainReferenceInfo.cs</Link>
+    </Compile>
+    <Compile Include="DocumentStoreBaseExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

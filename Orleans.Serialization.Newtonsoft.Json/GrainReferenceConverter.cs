@@ -1,7 +1,15 @@
+#if NEWTONSOFT
 namespace Orleans.Serialization.Newtonsoft.Json
+#elif RAVENDB
+namespace Orleans.Serialization.RavenDB.Json
+#endif
 {
     using System;
+#if NEWTONSOFT
     using global::Newtonsoft.Json;
+#elif RAVENDB
+    using Raven.Imports.Newtonsoft.Json;
+#endif
 
     internal class GrainReferenceConverter : JsonConverter
     {
