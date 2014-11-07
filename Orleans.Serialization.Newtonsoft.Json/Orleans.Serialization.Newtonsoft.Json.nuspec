@@ -21,8 +21,8 @@
   </metadata>
   <files>
     <!-- NET 4.5 -->
-    <file src=".\Bin\Release\Orleans.Serialization.Newtonsoft.Json.dll" target="lib\net45" />
-    <file src=".\Bin\Release\Orleans.Serialization.Newtonsoft.Json.pdb" target="lib\net45" />
+    <file src="bin\Release\Orleans.Serialization.Newtonsoft.Json.dll" target="lib\net45" />
+    <file src="bin\Release\Orleans.Serialization.Newtonsoft.Json.pdb" target="lib\net45" />
 
     <!-- Sources -->
     <file src="**\*.cs" target="src"/>
