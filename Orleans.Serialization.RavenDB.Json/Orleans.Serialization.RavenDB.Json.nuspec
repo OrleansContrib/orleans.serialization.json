@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>Orleans.Serialization.RavenDB.Json</id>
-    <version>$version$</version>
+	<version>0.9.0</version>
     <title>Orleans.Serialization.RavenDB.Json</title>
     <owners>Daniel Marbach</owners>
     <licenseUrl>https://github.com/OrleansContrib/orleans.serialization.json/blob/master/LICENSE</licenseUrl>

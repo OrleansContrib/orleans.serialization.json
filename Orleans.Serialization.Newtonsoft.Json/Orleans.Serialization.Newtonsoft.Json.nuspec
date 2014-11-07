@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>Orleans.Serialization.Newtonsoft.Json</id>
-    <version>$version$</version>
+    <version>0.9.0</version>
     <title>Orleans.Serialization.Newtonsoft.Json</title>
     <authors>Daniel Marbach</authors>
     <owners>Daniel Marbach</owners>
