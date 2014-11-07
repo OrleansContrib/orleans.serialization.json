@@ -18,5 +18,12 @@
       <reference file="Orleans.Serialization.RavenDB.Json.dll" />
     </references>    
   </metadata>
-  <files />
+  <files>
+    <!-- NET 4.5 -->
+    <file src=".\Bin\Release\Orleans.Serialization.RavenDB.Json.dll" target="lib\net45" />
+    <file src=".\Bin\Release\Orleans.Serialization.RavenDB.Json.pdb" target="lib\net45" />
+
+    <!-- Sources -->
+    <file src="**\*.cs" target="src"/>
+  </files>
 </package>
