@@ -4,6 +4,7 @@
     <id>Orleans.Serialization.RavenDB.Json</id>
 	<version>0.9.0</version>
     <title>Orleans.Serialization.RavenDB.Json</title>
+    <authors>Daniel Marbach</authors>	
     <owners>Daniel Marbach</owners>
     <licenseUrl>https://github.com/OrleansContrib/orleans.serialization.json/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/OrleansContrib/orleans.serialization.json</projectUrl>
@@ -20,8 +21,8 @@
   </metadata>
   <files>
     <!-- NET 4.5 -->
-    <file src=".\Bin\Release\Orleans.Serialization.RavenDB.Json.dll" target="lib\net45" />
-    <file src=".\Bin\Release\Orleans.Serialization.RavenDB.Json.pdb" target="lib\net45" />
+    <file src="bin\Release\Orleans.Serialization.RavenDB.Json.dll" target="lib\net45" />
+    <file src="bin\Release\Orleans.Serialization.RavenDB.Json.pdb" target="lib\net45" />
 
     <!-- Sources -->
     <file src="**\*.cs" target="src"/>
