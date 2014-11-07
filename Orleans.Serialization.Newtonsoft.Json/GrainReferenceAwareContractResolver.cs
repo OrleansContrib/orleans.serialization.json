@@ -6,6 +6,7 @@ namespace Orleans.Serialization.RavenDB.Json
 {
     using System;
     using System.Reflection;
+    using Runtime;
 #if NEWTONSOFT
     using global::Newtonsoft.Json;
     using global::Newtonsoft.Json.Serialization;

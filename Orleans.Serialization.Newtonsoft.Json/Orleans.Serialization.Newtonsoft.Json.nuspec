@@ -1,17 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
-    <metadata>
-        <id>Orleans.Serialization.Newtonsoft.Json</id>
-        <version>$version$</version>
-        <title>Orleans.Serialization.Newtonsoft.Json</title>
-        <authors>danielmarbach</authors>
-        <owners>danielmarbach</owners>
-        <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <description>Newtonsoft.Json serialization package for Orleans</description>
-        <tags>Orleans</tags>
-        <dependencies>
-			<dependency id="Newtonsoft.Json" version="[6.0.3,7.0.0)" />
-        </dependencies>
-    </metadata>
-    <files />
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Orleans.Serialization.Newtonsoft.Json</id>
+    <version>$version$</version>
+    <title>Orleans.Serialization.Newtonsoft.Json</title>
+    <authors>Daniel Marbach</authors>
+    <owners>Daniel Marbach</owners>
+    <licenseUrl>https://github.com/OrleansContrib/orleans.serialization.json/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/OrleansContrib/orleans.serialization.json</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Newtonsoft.Json serialization support for Orleans</description>
+    <summary>Newtonsoft.Json serialization support for Orleans</summary>
+    <tags>Orleans</tags>
+    <dependencies>
+      <dependency id="Newtonsoft.Json" version="[6.0.3, 7.0.0)" />
+    </dependencies>
+    <references>
+      <reference file="Orleans.Serialization.Newtonsoft.Json.dll" />
+    </references>
+  </metadata>
+  <files />
 </package>

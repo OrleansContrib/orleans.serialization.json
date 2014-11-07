@@ -5,6 +5,7 @@ namespace Orleans.Serialization.RavenDB.Json
 #endif
 {
     using System;
+    using Runtime;
 #if NEWTONSOFT
     using global::Newtonsoft.Json;
 #elif RAVENDB
